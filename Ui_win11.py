@@ -545,6 +545,8 @@ class Ui_setting(object):
         self.toolButton_6.clicked.connect(self.toolButton_3.show)
         self.toolButton_6.clicked.connect(setting.showNormal)
         self.toolButton_6.clicked.connect(self.toolButton_6.hide)
+        self.checkBox.clicked['bool'].connect(self.label_33.setDisabled)
+        self.checkBox.clicked['bool'].connect(self.comboBox.setDisabled)
         QtCore.QMetaObject.connectSlotsByName(setting)
 
     def retranslateUi(self, setting):

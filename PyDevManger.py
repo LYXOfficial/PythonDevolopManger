@@ -128,6 +128,7 @@ class Settinger(FramelessWindow,Ui_setting):
         self.painter.drawEllipse(0, 0, self.size.width(), self.size.height())
         self.src.setMask(self.mask)
         self.label_36.setPixmap(self.src)
+        self.menu.setFrameShape(QListWidget.NoFrame)
         if self.setting["appearance"]["mode"]=="effect":
             if "linux" not in platform.platform().lower() and ("Windows-7" in platform.platform() or "Windows-Vista" in platform.platform()):
                 self.setAttribute(Qt.WA_TranslucentBackground)

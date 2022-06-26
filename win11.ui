@@ -1338,5 +1338,37 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>checkBox</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>label_33</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1021</x>
+     <y>142</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>345</x>
+     <y>190</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>comboBox</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1025</x>
+     <y>142</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1023</x>
+     <y>189</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
 </ui>
